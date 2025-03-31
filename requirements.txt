@@ -1,0 +1,6 @@
+flask  # If using Flask
+django  # If using Django (remove Flask if using Django)
+gunicorn  # For deployment
+pillow  # Image processing (if needed)
+requests  # Making HTTP requests (if needed)
+python-dotenv  # For loading environment variables

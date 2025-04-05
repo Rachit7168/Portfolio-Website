@@ -1,4 +1,4 @@
-from flask import Flask, render_template , request
+from flask import Flask, render_template , request , send_from_directory
 import smtplib
 import os
 from dotenv import load_dotenv
@@ -32,6 +32,12 @@ def contact():
     except Exception as e:
         print(f'Error Sending email : {e}')
         return "Failed to send mail"
+
+@app.route('/resume')
+def resume():
+    return send_from_directory(directory='static/files', path='resume.pdf')
+
+
 
 if __name__ == "__main__":  
     app.run(debug=True)  

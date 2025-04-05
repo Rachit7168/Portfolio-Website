@@ -59,8 +59,10 @@
 
                 <div class="buttons pt-3">
                     <button class="btn btn-primary rounded">HIRE ME</button>
-                    <button class="btn btn-dark rounded">DOWNLOAD CV</button>
-                </div>      
+                
+                    <a href="{{ url_for('resume') }}" class="btn btn-dark rounded" target="_blank">DOWNLOAD CV</a>
+                </div>
+                
 
                 <div class="socials mt-4">
                     <a class="social-item" href="https://github.com/Rachit7168"><i class="ti-github"></i></a>
@@ -104,9 +106,9 @@
                     <h6 class="title">Rachit Makwana</h6>
                     <p class="subtitle">Python Developer</p>
                     <p> Hi, I'm Rachit Makwana, a passionate Python Developer with a strong drive for building efficient and innovative solutions. With a deep interest in software development, automation, and AI-driven applications, I love transforming ideas into reality through clean and scalable code.
-                    <p>I have completed the 100 Days of Python course by Angela Yu, strengthening my expertise in backend development, APIs, and data handling. My projects range from a flight finder app using Amadeus API to a manga website, a recipe-sharing platform, and a café management system—all designed to enhance user experience and streamline workflows.</p>
+                    
                     <p>Beyond coding, I have a creative side—I design logos, banners, and flyers, and I’m also exploring anime light box design. I’m always eager to learn, innovate, and take on new challenges. My ultimate goal? To land a role as a Python Developer at Google and make a meaningful impact in the tech industry.</p>
-                    <button class="btn btn-primary rounded mt-3" >DOWNLOAD CV</button>                   
+                    <a href="{{ url_for('resume') }}" class="btn btn-primary rounded mt-3" target="_blank">DOWNLOAD CV</a>
                 </div>
             </div>
         </div>
